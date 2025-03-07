@@ -1,7 +1,9 @@
 import React, { useContext } from "react";
 import contextLanguage from "../context/Language";
 import { dataJobs, dataJobsButton } from "../Data";
-import { PhotoProvider, PhotoView } from "react-photo-view";
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
+
 
 const Tag = ({ name, icon }) => (
   <span
@@ -33,19 +35,18 @@ const Card = ({ href, image, tag, ...language }) => {
         dark:border-gray-700 
     "
     >
-      <div className="flex-col flex flex-wrap items-center w-fit gap-8">
+      <div className="flex-col flex flex-wrap items-center w-fit gap-8 ">
       <PhotoProvider >
 
-<div className='flex flex-wrap flex-row gap-2 justify-evenly' >
+<div className='flex flex-wrap flex-row gap-2 justify-evenly ' >
 
-         <PhotoView src={image}>
+         <PhotoView src={image} >
             <img src={image} alt="00" key={"00"}  className='pb-7 cursor-pointer'loading="lazy" />
         </PhotoView>
     
  </div>
 </PhotoProvider>
 
-        <img src={image} alt="" />
 
 
 
