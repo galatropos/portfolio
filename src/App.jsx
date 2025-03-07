@@ -57,7 +57,7 @@ function App() {
          rounded-sm shadow rounded-l-none 
          bg-app_lc_secondary  dark:bg-app_ld_secondary
          '>
-          <div className='border  mx-4 p-4 shadow-[-15px_-0px_rgba(126,_150,_147,_0.4)] 
+          <div className='  mx-4 p-4 shadow-[-15px_-0px_rgba(126,_150,_147,_0.4)] 
 ' >
 
           {useRoutes(MyRoute)}
