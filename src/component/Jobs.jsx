@@ -34,6 +34,17 @@ const Card = ({ href, image, tag, ...language }) => {
     "
     >
       <div className="flex-col flex flex-wrap items-center w-fit gap-8">
+      <PhotoProvider >
+
+<div className='flex flex-wrap flex-row gap-2 justify-evenly' >
+
+         <PhotoView src={image}>
+            <img src={image} alt="00" key={"00"}  className='pb-7 cursor-pointer'loading="lazy" />
+        </PhotoView>
+    
+ </div>
+</PhotoProvider>
+
         <img src={image} alt="" />
 
 
