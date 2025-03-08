@@ -284,16 +284,16 @@ export const dataJobs = [
 export const dataTitle =
 [
   {
-    id:"experience",
-    element:<Experience/>,
-    es:"Mis habilidades como desarrollador",
-    en:"My skills as a developer",
-  },
-  {
     id:"about",
     element:<About/>,
     es:"Acerca de mi",
     en:"about me",
+  },
+  {
+    id:"experience",
+    element:<Experience/>,
+    es:"Mis habilidades como desarrollador",
+    en:"My skills as a developer",
   },
   {
     id:"jobs",
