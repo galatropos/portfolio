@@ -17,7 +17,7 @@ const Button=({title,icon,to,last,md})=>{
 
   }
 
-  return(<span onClick={()=>onClick(to)} className={`flex flex-row max-md:flex-col flex-nowrap gap-2
+  return(<span onClick={()=>onClick(to)} className={`flex flex-row max-md:flex-col flex-nowrap gap-2 select-none
     md:w-fit
     max-md:w-full
     max-md:p-10
@@ -36,6 +36,7 @@ const Button=({title,icon,to,last,md})=>{
      dark:md:hover:border-b-app_ld_text
      md:hover:text-app_lc_text
      dark:md:hover:text-app_ld_text
+     max-md:border-none
 
   
 
@@ -48,9 +49,14 @@ const Button=({title,icon,to,last,md})=>{
 
 const Nav = ({md=false}) => {
   const {getLanguage}= useContext(contextLanguage)
-
+    
   return (
-        dataNavigation[getLanguage].map((e,i)=><Button md={md} {...e} key={i} last={navigation.length-1===i} />)
+    <>
+    {
+
+      dataNavigation[getLanguage].map((e,i)=><Button md={md} {...e} key={i} last={navigation.length-1===i} />)
+    }
+    </>
   )
 }
 

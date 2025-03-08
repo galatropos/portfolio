@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
-import { Facebook, Gmail, LinkedIn, WhatsApp } from "./Icons";
-import { MailOutlined, WhatsAppOutlined } from "@ant-design/icons";
 import contextLanguage from "../context/Language";
 import { dataContact, dataMyContact, dataSocial } from "../Data";
+import Copy from "./Copy";
 
 const Card = ({ text, href, icon }) => (
   <div className="  flex flex-col  gap-2 items-center w-fit ">
@@ -13,7 +12,7 @@ const Card = ({ text, href, icon }) => (
     >
       {icon}
     </a>
-    <div className="flex-row w-max flex-nowrap  justify-between" >{text}</div>
+    <div className="flex-row w-max flex-nowrap  justify-between" >{text} <Copy text={text}  /></div>
   </div>
 );
 
@@ -23,9 +22,7 @@ const Contact = () => {
 
   return (
     <div className="flex flex-col justify-center items-center gap-20 ">
-      <h2 className="text-app_lc_accent text-center dark:text-app_ld_accent text-2xl">
-        {dataContact[getLanguage][0]}
-      </h2>
+
       <div className="flex flex-col items-center gap-4">
         <h3 className="text-xl text_text">
           {dataContact[getLanguage][1]}

@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 import contextLanguage from "../context/Language";
-import { dataJobs, dataJobsButton } from "../Data";
+import { dataContact, dataJobs, dataJobsButton, dataMyContact } from "../Data";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 
 const Tag = ({ name, icon }) => (
   <span
     className="flex flex-row flex-nowrap w-fit
-   bg-app_lc_primary 
+   bg-app_lc_background 
    dark:bg-app_ld_accent 
     text-app_lc_text
     dark:text-app_ld_secondary
@@ -26,6 +26,7 @@ const Card = ({ href, image, tag, ...language }) => {
   const { getLanguage } = useContext(contextLanguage);
   const { name, description } = language[getLanguage];
   return (
+    
     <div
       className="w-full
     flex 
@@ -42,6 +43,7 @@ const Card = ({ href, image, tag, ...language }) => {
         p-4
     "
     >
+  
       <div className="flex-col flex flex-wrap items-center w-fit gap-2 ">
         <PhotoProvider>
           <div className="flex flex-wrap flex-row gap-2 justify-evenly ">
@@ -96,6 +98,8 @@ const Card = ({ href, image, tag, ...language }) => {
 const Jobs = () => {
   return (
     <div className="flex flex-wrap gap-10 justify-evenly  ">
+         
+   
       {dataJobs.map((e, i) => (
         <Card {...e} key={i} />
       ))}

@@ -2,10 +2,8 @@ import React, { useContext } from "react";
 import contextLanguage from "../context/Language";
 import { dataAbout } from "../Data";
 import Header from "./Header";
-import Nav from "./Nav";
 import MyPhoto from "./MyPhoto";
 import Language from "./Language";
-import ToggleLanguage from "./ToggleLanguage";
 
 const About = () => {
   const { getLanguage } = useContext(contextLanguage);

@@ -1,6 +1,6 @@
-import { ArrowUpOutlined, VerticalLeftOutlined } from "@ant-design/icons";
+import { ArrowUpOutlined } from "@ant-design/icons";
 import React from "react";
-import { dataAbout, dataContact, dataMyContact, dataSocial } from "../Data";
+import {  dataMyContact, dataSocial } from "../Data";
 
 const Footer = () => {
   const onClick = () => {

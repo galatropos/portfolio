@@ -10,14 +10,11 @@ d5b09c  coffe
 204045  forest
 */
 const color=[
-  "#e9e6e4",//  0-ivory
-  "#ebcdc4",//  1-blush
-  "#d5b09c",//  2-coffe
-  "#7e9693",//  3-sage
-  "#204045",//  4-forest
-  "#ffffff",//  5-white
-  "#1a1716",//  6-dark1 hard
-  "#423a38",//  7-dark suave
+  "#2ECC71",//  0-Esmeralda
+  "#cad8de",//  1-light suave
+  "#ccded5",//  2-light hard
+  "#121212",//  3-dark hard
+  "#2a523b",//  4-dark1 suave
   
 ]
 
@@ -31,18 +28,18 @@ export default {
     extend: {
       colors:{
 
-        app_lc_primary:color[1],      
-        app_lc_secondary:color[5],     
-        app_lc_accent:color[2],     
-        app_lc_background:color[0],     
-        app_lc_text:color[4],    
+        app_lc_primary:color[2],      
+        app_lc_secondary:color[2],     
+        app_lc_accent:color[0],     
+        app_lc_background:color[1],     
+        app_lc_text:color[3],    
        
  
-        app_ld_primary:color[1],      
-        app_ld_secondary:color[7],     
-        app_ld_accent:color[2],     
-        app_ld_background:color[6],     
-        app_ld_text:color[0],    
+        app_ld_primary:color[2],      
+        app_ld_secondary:color[4],     
+        app_ld_accent:color[0],     
+        app_ld_background:color[3],     
+        app_ld_text:color[2],    
            
       }
 

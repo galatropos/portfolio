@@ -23,6 +23,11 @@ import {
 } from "./component/Icons";
 import mercadoexpres from "./assets/mercadoexpres.webp";
 import rosasEternasBecky from "./assets/rosasEternasBecky.webp";
+import tcgp from "./assets/tcgp.webp";
+import Experience from "./component/Experience";
+import About from "./component/About";
+import Jobs from "./component/Jobs";
+import Contact from "./component/Contact";
 
 export const dataNavigation = {
   es: [
@@ -32,12 +37,12 @@ export const dataNavigation = {
       to: "about",
     },
     {
-      title: "Experiencia & formación",
+      title: "Experiencia & habilidades",
       icon: <ProfileOutlined />,
       to: "experience",
     },
     {
-      title: "Trabajos",
+      title: "Projectos",
       icon: <AuditOutlined />,
       to: "jobs",
     },
@@ -54,12 +59,12 @@ export const dataNavigation = {
       to: "about",
     },
     {
-      title: "Experience & training",
+      title: "Experience & skill",
       icon: <ProfileOutlined />,
       to: "experience",
     },
     {
-      title: "Jobs",
+      title: "Projects",
       icon: <AuditOutlined />,
       to: "jobs",
     },
@@ -84,61 +89,47 @@ export const dataHeader = {
 export const dataAbout = {
   es: (
     <>
-      Hola, soy Alfaro López Giovany Alejandro, ingeniero en Tecnologías de la
-      Información con especialización y experiencia en redes y seguridad.
-      Además, soy Ingeniero Profesional en Seguridad en Redes y Software Libre,
-      así como Técnico Superior en Redes y Telecomunicaciones.
       <p>
-        Actualmente, me desempeño como docente en el Telebachillerato
-        Comunitario de nivel medio superior, impartiendo clases en el área de
-        Ciencias Experimentales, Lógica y Tecnologías.
+        Hola, soy Alfaro López Giovany Alejandro, Ingeniero en Tecnologías de la
+        Información con especialización en redes y seguridad. También soy
+        Ingeniero Profesional en Seguridad en Redes y Software Libre, y Técnico
+        Superior en Redes y Telecomunicaciones.
       </p>
+
       <p>
-        A lo largo de mi trayectoria, he desarrollado habilidades en
-        administración de redes, seguridad informática, software libre,
-        virtualización y cloud computing, automatización y scripting, así como
-        en desarrollo backend y frontend.
+        Actualmente, soy docente en el Telebachillerato Comunitario, impartiendo clases
+        en la área Ciencias Experimentales, Lógica y Tecnologías. Tengo experiencia en
+        administración de redes, seguridad informática, virtualización, cloud
+        computing, automatización y desarrollo backend/frontend.
       </p>
+
       <p>
-        Me apasiona crear soluciones innovadoras, mejorar la experiencia del
-        usuario y optimizar procesos. Disfruto diseñar sistemas eficientes que
-        reduzcan costos y aumenten la productividad, además de resolver
-        problemas complejos mediante tecnología innovadora y pensamiento
-        estratégico.
-      </p>
-      <p>
-        Siempre estoy en búsqueda de nuevos retos y oportunidades para seguir
-        creciendo profesionalmente. Si tienes una propuesta interesante o deseas
-        conectar, estaré encantado de conversar. ¡Estoy abierto a nuevas
-        colaboraciones y desafíos!
+        Me apasiona crear soluciones innovadoras, optimizar procesos y mejorar
+        la experiencia del usuario. Siempre busco nuevos retos y oportunidades
+        para seguir creciendo. ¡Estoy abierto a nuevas colaboraciones!
       </p>
     </>
   ),
   en: (
     <>
-      Hello, my name is Alfaro López Giovany Alejandro. I am an Information
-      Technology Engineer specializing in networks and security. Additionally, I
-      am a Professional Engineer in Network Security and Free Software, as well
-      as a Senior Technician in Networks and Telecommunications.
       <p>
-        Currently, I work as a teacher at the Community Telebachillerato at the
-        upper secondary level, teaching Experimental Sciences, Logic, and
-        Technologies.
+        Hello, I'm Alfaro López Giovany Alejandro, an Information Technology
+        Engineer specializing in networks and security. I’m also a Certified
+        Network and Free Software Security Engineer and a Senior Technician in
+        Networks and Telecommunications.
       </p>
+
       <p>
-        Throughout my career, I have developed skills in network administration,
-        cybersecurity, free software, virtualization and cloud computing,
-        automation and scripting, as well as backend and frontend development.
+        Currently, I teach Experimental Sciences, Logic, and Technology at a
+        Community High School. I have experience in network administration,
+        cybersecurity, virtualization, cloud computing, automation, and
+        backend/frontend development.
       </p>
-      I am passionate about creating innovative solutions, enhancing user
-      experience, and optimizing processes. I enjoy designing efficient systems
-      that reduce costs and increase productivity, as well as solving complex
-      problems through innovative technology and strategic thinking.
+
       <p>
-        I am always looking for new challenges and opportunities to continue
-        growing professionally. If you have an interesting opportunity or simply
-        want to connect, I would be happy to talk. I am open to new
-        collaborations and challenges!
+        I'm passionate about creating innovative solutions, optimizing
+        processes, and enhancing user experiences. I'm always looking for new
+        challenges and opportunities to grow. Let’s connect!
       </p>
     </>
   ),
@@ -224,10 +215,11 @@ export const dataJobs = [
     },
     en: {
       name: "Eternal Roses Becky",
-      description: "Rosas Eternas Becky is a project dedicated to creating exclusive floral arrangements using handcrafted eternal roses made with high-quality ribbons. The website is designed to reflect the elegance and special meaning of each creation, offering an intuitive and appealing experience for customers. This project combines creativity, design, and functionality to highlight the beauty of each piece and make them easily accessible.",
+      description:
+        "Rosas Eternas Becky is a project dedicated to creating exclusive floral arrangements using handcrafted eternal roses made with high-quality ribbons. The website is designed to reflect the elegance and special meaning of each creation, offering an intuitive and appealing experience for customers. This project combines creativity, design, and functionality to highlight the beauty of each piece and make them easily accessible.",
     },
-    image:rosasEternasBecky,
-    href:"https://rosaseternasbecky.com/",
+    image: rosasEternasBecky,
+    href: "https://rosaseternasbecky.com/",
     tag: [
       {
         name: "AWS",
@@ -255,9 +247,67 @@ export const dataJobs = [
       },
     ],
   },
- 
+  {
+    es: {
+      name: "TCG Pokemón",
+      description:
+      "Desarrollé una aplicación web diseñada para ayudar a los coleccionistas del juego de cartas Pokémon TCG a gestionar sus colecciones. La app permite a los usuarios registrar las cartas que les faltan, facilitando el seguimiento de su progreso"
+    },
+    en: {
+      name: "TCG Pokemon",
+      description:
+      "I developed a web application designed to help collectors of the Pokémon TCG card game manage their collections. The app allows users to register the cards they are missing, making it easier to track their progress."
+    },
+    image: tcgp,
+    href: "https://tcgpokemon.netlify.app/",
+    tag: [
+      {
+        name: "TawilwindCSS",
+        icon: <TailwindCSS />,
+      },
+      {
+        name: "HTML5",
+        icon: <HTML5 />,
+      },
+      {
+        name: "JavaScript",
+        icon: <JavaScript />,
+      },
+    ],
+  },
 ];
 
+
+
+
+
+export const dataTitle =
+[
+  {
+    id:"experience",
+    element:<Experience/>,
+    es:"Mis habilidades como desarrollador",
+    en:"My skills as a developer",
+  },
+  {
+    id:"about",
+    element:<About/>,
+    es:"Acerca de mi",
+    en:"about me",
+  },
+  {
+    id:"jobs",
+    element:<Jobs/>,
+    es:"proyectos realizados",
+    en:"projects carried out",
+  },
+  {
+    id:"contact",
+    element:<Contact/>,
+    es:"¿como puedes contactarme?",
+    en:"How can you contact me?",
+  },
+];
 
 
 export const dataSocial = [

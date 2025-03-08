@@ -1,5 +1,5 @@
 import { MoonOutlined, SunOutlined } from '@ant-design/icons'
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import contextTheme from '../context/Theme';
 
 const Theme = ({className}) => {

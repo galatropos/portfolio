@@ -36,10 +36,9 @@ const ToggleLanguage = () => {
     <div className={`
     dark:peer-focus:ring-app_ld_primary 
     peer-focus:ring-app_lc_primary
-    peer-checked:bg-app_lc_background
-    bg-app_lc_background
-    after:bg-app_lc_secondary 
-    dark:after:bg-app_ld_secondary 
+    peer-checked:bg-app_lc_secondary
+    bg-app_lc_secondary
+    after:bg-app_ld_secondary 
     after:border-app_lc_primary
     text-app_lc_text
     after:border 
@@ -53,6 +52,7 @@ const ToggleLanguage = () => {
     after:absolute after:top-0.5 after:start-[4px] 
     after:rounded-full after:h-6 after:w-6 after:transition-all +
     flex flex-row 
+    select-none
     w-24
      ${dir}
     `}

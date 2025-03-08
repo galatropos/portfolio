@@ -1,5 +1,4 @@
-import { MenuOutlined } from "@ant-design/icons";
-import React, { useEffect } from "react";
+import React, { useContext } from "react";
 import MenuMd from "./component/MenuMd";
 import MenuLg from "./component/MenuLg";
 import About from "./component/About";
@@ -7,21 +6,28 @@ import Experience from "./component/Experience";
 import Jobs from "./component/Jobs";
 import Contact from "./component/Contact";
 import Footer from "./component/Footer";
+import contextLanguage from "./context/Language";
+import { dataTitle } from "./Data";
+
+const Title=({id,element,...language})=>
+{
+  const {getLanguage}= useContext(contextLanguage)
+return(
+
+  <>
+        <section id={id} className="pt-32">        
+          <h2 className="text-app_lc_accent text-center dark:text-app_ld_accent text-2xl pb-4">
+          {language[getLanguage]}
+        </h2>
+          {element}
+        </section>
+        
+       </>
+)
+}
 
 const App = () => {
-  function parallax() {
-    var s = document.getElementById("floater");
-  var yPos = 0 - window.pageYOffset/5;  
-  s.style.top = 50 + yPos + "%"; }
 
-useEffect(() => {
-
-
-window.addEventListener("scroll", function(){
-    parallax(); 
-});
-
-}, []);
 
   return (
     <div className="
@@ -31,9 +37,7 @@ window.addEventListener("scroll", function(){
     min-h-screen
       bg-app_lc_background
       dark:bg-app_ld_background
-      
      text_text "
-     id="floater"
      >
       <div  className="overflow-auto z-20 min-h-20 h-20  w-full fixed top-0  bg-app_lc_primary/90 dark:bg-app_ld_primary/90 shadow_app ">
           <div className="  h-full  w-full  ">
@@ -43,10 +47,7 @@ window.addEventListener("scroll", function(){
       </div>
       <div className=" w-full flex  justify-center background_bg  ">
         <span className="w-[70%]   flex flex-col items-center justify-center">
-          <section id="experience" className="pt-32"><Experience /></section>
-          <section id="jobs" className="pt-32"><Jobs /></section>
-          <section id="contact" className="pt-32"><Contact /></section>
-          <section id="about" className="pt-32"><About /></section>
+          {dataTitle.map(e=><Title {...e} key={e.id} />)}
         </span>
 
       </div>
