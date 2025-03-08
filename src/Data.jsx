@@ -16,6 +16,10 @@ import {
   HTML5,
   Redux,
   Vite,
+  Facebook,
+  LinkedIn,
+  WhatsApp,
+  Gmail,
 } from "./component/Icons";
 import mercadoexpres from "./assets/mercadoexpres.webp";
 import rosasEternasBecky from "./assets/rosasEternasBecky.webp";
@@ -252,4 +256,33 @@ export const dataJobs = [
     ],
   },
  
+];
+
+
+
+export const dataSocial = [
+  {
+    text: "/gaal.el",
+    href: "https://www.facebook.com/gaal.el",
+    icon: <Facebook />,
+  },
+
+  {
+    text: "/gaal",
+    href: "https://www.linkedin.com/in/gaal/",
+    icon: <LinkedIn />,
+  },
+];
+export const dataMyContact = [
+  {
+    text: "+521 919 128 1521",
+    href: "https://wa.me/5219191281521?text=¡Hola! Estoy en búsqueda de nuevas oportunidades. Si crees que encajo en tu equipo, hablemos.",
+    icon: <WhatsApp />,
+  },
+
+  {
+    text: "giovany.alejandro80@gmail.com",
+    href: "https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=giovany.alejandro80@gmail.com",
+    icon: <Gmail />,
+  },
 ];

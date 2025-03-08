@@ -32,7 +32,7 @@ const MenuMd = () => {
         className={`background_bg fixed w-screen h-screen top-0 left-0 hidden `}
       >
         <div className="h-full w-full flex flex-col items-center gap-4  ">
-          <div className=" flex px-2 justify-around items-center w-full text-app_lc_text border">
+          <div className=" flex px-2 justify-around items-center w-full text-app_lc_text ">
             <span className="flex flex-nowrap">
               <Logotipo /> Giovany Alejandro Alfaro Lopez
             </span>
@@ -46,9 +46,9 @@ const MenuMd = () => {
             </span>
           </div>
 
-          <div className="secondary_bg  rounded-md  w-[80%] h-[90%] overflow-hidden">
+          <div className="secondary_bg  rounded-md  w-[80%] h-[85%] overflow-hidden">
             <div className="mb-5 mt-2"></div>
-            <span className="flex  flex-col gap-6 ">
+            <span className="flex  flex-col gap-10 ">
               <Nav md />
             </span>
           </div>

@@ -17,7 +17,7 @@ const About = () => {
       text-app_lc_text 
       dark:text-app_ld_text flex 
       md:flex-row flex-col 
-      w-screen h-fit md:h-screen
+      w-full h-fit md:h-full
       justify-center "
       >
         <header

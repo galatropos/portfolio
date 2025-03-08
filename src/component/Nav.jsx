@@ -17,13 +17,27 @@ const Button=({title,icon,to,last,md})=>{
 
   }
 
-  return(<span onClick={()=>onClick(to)} className={`flex flex-row max-md:flex-col flex-nowrap 
+  return(<span onClick={()=>onClick(to)} className={`flex flex-row max-md:flex-col flex-nowrap gap-2
     md:w-fit
     max-md:w-full
-    border 
+    max-md:p-10
+
+    max-md:border 
+    max-md:border-x-0 
+    max-md:border-t-0 
     items-center justify-center 
      h-11 
-    border-x-0 border-t-0 
+     cursor-pointer
+
+      md:border-x-0
+      md:border-y-0
+      hover:md:border-b-2
+     md:hover:border-b-app_lc_text
+     dark:md:hover:border-b-app_ld_text
+     md:hover:text-app_lc_text
+     dark:md:hover:text-app_ld_text
+
+  
 
 `}>
     <span>{icon}</span>

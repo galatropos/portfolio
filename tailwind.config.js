@@ -16,8 +16,8 @@ const color=[
   "#7e9693",//  3-sage
   "#204045",//  4-forest
   "#ffffff",//  5-white
-  "#0c0e14",//  6-dark suave
-  "#181b28",//  7-dark1 hard
+  "#1a1716",//  6-dark1 hard
+  "#423a38",//  7-dark suave
   
 ]
 

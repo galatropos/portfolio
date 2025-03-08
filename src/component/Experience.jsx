@@ -145,6 +145,7 @@ const Card = ({ name, icon, experience }) =>
   return(
     <div
     className="flex flex-row items-center 
+    shadow_app
     w-fit
     h-fit
     p-2
