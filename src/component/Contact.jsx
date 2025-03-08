@@ -22,7 +22,7 @@ const Contact = () => {
 
 
   return (
-    <div className="flex flex-col justify-center items-center gap-20">
+    <div className="flex flex-col justify-center items-center gap-20 ">
       <h2 className="text-app_lc_accent text-center dark:text-app_ld_accent text-2xl">
         {dataContact[getLanguage][0]}
       </h2>

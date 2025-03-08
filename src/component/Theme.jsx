@@ -1,21 +1,30 @@
 import { MoonOutlined, SunOutlined } from '@ant-design/icons'
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import contextTheme from '../context/Theme';
 
 const Theme = ({className}) => {
-    const [theme, setTheme] = useState(true);
+   const {getTheme,setTheme}= useContext(contextTheme)
+
     useEffect(() => {
     setTheme( window.matchMedia("(prefers-color-scheme: dark)").matches)
     }, []);
 
     const onclick=()=>{
-        const element=document.querySelector("html")
-        element.classList.toggle("dark")
-        setTheme(element.classList.contains("dark"))
+        setTheme(!getTheme)
     }
+useEffect(() => {
+    
+    const element=document.querySelector("html")
+    if(getTheme)element.classList.add("dark")
+    else element.classList.remove("dark")
+        
+}, [getTheme]);
+        
+            
 
     return (
     <div className={className}>
-        {theme?<SunOutlined   onClick={onclick} />:<MoonOutlined onClick={onclick} />}
+        {getTheme?<SunOutlined   onClick={onclick} />:<MoonOutlined onClick={onclick} />}
         
     </div>
   )

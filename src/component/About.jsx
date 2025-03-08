@@ -57,7 +57,7 @@ const About = () => {
   text-justify
   dark:first-letter:text-app_ld_accent
   first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold 
-   first-letter:me-3 first-letter:float-start"
+   first-letter:me-3 first-letter:float-start overflow-hidden"
             >
               {dataAbout[getLanguage]}
         

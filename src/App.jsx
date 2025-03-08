@@ -1,5 +1,5 @@
 import { MenuOutlined } from "@ant-design/icons";
-import React from "react";
+import React, { useEffect } from "react";
 import MenuMd from "./component/MenuMd";
 import MenuLg from "./component/MenuLg";
 import About from "./component/About";
@@ -9,6 +9,20 @@ import Contact from "./component/Contact";
 import Footer from "./component/Footer";
 
 const App = () => {
+  function parallax() {
+    var s = document.getElementById("floater");
+  var yPos = 0 - window.pageYOffset/5;  
+  s.style.top = 50 + yPos + "%"; }
+
+useEffect(() => {
+
+
+window.addEventListener("scroll", function(){
+    parallax(); 
+});
+
+}, []);
+
   return (
     <div className="
     flex 
@@ -18,8 +32,10 @@ const App = () => {
       bg-app_lc_background
       dark:bg-app_ld_background
       
-     text_text ">
-      <div className=" z-20 min-h-20 h-20  w-full fixed top-0  bg-app_lc_primary/90 dark:bg-app_ld_primary/90 shadow_app ">
+     text_text "
+     id="floater"
+     >
+      <div  className="overflow-auto z-20 min-h-20 h-20  w-full fixed top-0  bg-app_lc_primary/90 dark:bg-app_ld_primary/90 shadow_app ">
           <div className="  h-full  w-full  ">
             <MenuMd />
             <MenuLg />

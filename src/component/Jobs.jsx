@@ -80,7 +80,7 @@ const Card = ({ href, image, tag, ...language }) => {
         <h5 className="mb-2 text-2xl font-bold tracking-tight accent_text">
           {name}
         </h5>
-        <p className="mb-3 font-normal text_text">
+        <p className="mb-3 font-normal text_text overflow-auto h-56">
           {description}
         </p>
         <div className="flex gap-2 flex-row flex-wrap  justify-evenly w-fit">
