@@ -1,7 +1,7 @@
 import { MoonOutlined, SunOutlined } from '@ant-design/icons'
 import React, { useEffect, useState } from 'react'
 
-const Theme = () => {
+const Theme = ({className}) => {
     const [theme, setTheme] = useState(true);
     useEffect(() => {
     setTheme( window.matchMedia("(prefers-color-scheme: dark)").matches)
@@ -14,7 +14,7 @@ const Theme = () => {
     }
 
     return (
-    <div className='flex items-center'>
+    <div className={className}>
         {theme?<SunOutlined   onClick={onclick} />:<MoonOutlined onClick={onclick} />}
         
     </div>

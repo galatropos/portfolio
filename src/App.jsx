@@ -9,19 +9,20 @@ import Contact from "./component/Contact";
 
 const App = () => {
   return (
-    <div className="flex flex-col w-full h-screen primary_bg text_text scroll-smooth">
-      <div className=" min-h-20 h-20  w-full fixed top-0  bg-app_lc_primary/90 dark:bg-app_ld_primary/90 shadow_app ">
+    <div className="flex flex-col w-full h-screen primary_bg text_text scroll-smooth ">
+      <div className=" min-h-20 h-20 z-20  w-full fixed top-0  bg-app_lc_primary/90 dark:bg-app_ld_primary/90 shadow_app ">
           <div className="  h-full  w-full  ">
             <MenuMd />
             <MenuLg />
           </div>
       </div>
-      <div className=" h-fit  w-full  bg-app_lc_background dark:bg-app_ld_background flex flex-col ">
-
-        <section id="experience" className="pt-32"><Experience /></section>
-        <section id="jobs" className="pt-32"><Jobs /></section>
-        <section id="contact" className="pt-32"><Contact /></section>
-        <section id="about" className="pt-32"><About /></section>
+      <div className=" w-full flex  justify-center background_bg  ">
+        <span className="w-[80%]   flex flex-col items-center justify-center">
+          <section id="experience" className="pt-32"><Experience /></section>
+          <section id="jobs" className="pt-32"><Jobs /></section>
+          <section id="contact" className="pt-32"><Contact /></section>
+          <section id="about" className="pt-32"><About /></section>
+        </span>
 
       </div>
     </div>
