@@ -24,7 +24,7 @@ const Footer = () => {
     text-app_lc_text
     "
     >
-      <div>Copyright © 2024. Giovany Alejandro Alfaro López</div>
+      <div>Copyright © 2025. Giovany Alejandro Alfaro López</div>
 
         <div className="flex flex-row gap-3 h-16  max-md:gap-1  flex-wrap  ">
           {newContact.map(({ href, icon }) => (
