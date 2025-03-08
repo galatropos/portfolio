@@ -10,4 +10,7 @@
     .text_bg {@apply bg-app_lc_text dark:bg-app_ld_text;}
     .text_text {@apply text-app_lc_text dark:text-app_ld_text;}
     .text_text2 {@apply text-app_ld_text dark:text-app_lc_text;}
+    .primary_text {@apply text-app_lc_primary dark:text-app_ld_primary;}
+    .accent_text {@apply text-app_lc_accent dark:text-app_ld_accent;}
+    .shadow_app {@apply  shadow-md dark:shadow-app_lc_background shadow-app_ld_background;}
   }

@@ -13,7 +13,8 @@ const Language = () => {
         hover:bg-app_lc_primary 
         hover:text-app_lc_secondary
         dark:hover:text-app_ld_secondary
-        shadow rounded-l-lg w-[70px] p-1 text-center ${getLanguage==="es"?"bg-app_ld_accent":null} `}>
+        shadow_app 
+        rounded-l-lg w-[70px] p-1 text-center ${getLanguage==="es"?"bg-app_ld_accent":null} `}>
             {dataLaguage[getLanguage][0]}
     </Link>
     <Link onClick={()=>setLanguage("en")} 
@@ -22,7 +23,8 @@ const Language = () => {
         hover:bg-app_lc_primary 
         hover:text-app_lc_secondary
         dark:hover:text-app_ld_secondary
-        shadow rounded-r-lg w-[70px] p-1 text-center ${getLanguage==="en"?"bg-app_ld_accent":null}`}>
+        shadow_app 
+        rounded-r-lg w-[70px] p-1 text-center ${getLanguage==="en"?"bg-app_ld_accent":null}`}>
             {dataLaguage[getLanguage][1]}
 
     </Link>

@@ -10,7 +10,7 @@ import Contact from "./component/Contact";
 const App = () => {
   return (
     <div className="flex flex-col w-full h-screen primary_bg text_text scroll-smooth">
-      <div className=" min-h-20 h-20  w-full fixed top-0  bg-app_lc_primary/90 dark:bg-app_ld_primary/90  shadow-md">
+      <div className=" min-h-20 h-20  w-full fixed top-0  bg-app_lc_primary/90 dark:bg-app_ld_primary/90 shadow_app ">
           <div className="  h-full  w-full  ">
             <MenuMd />
             <MenuLg />

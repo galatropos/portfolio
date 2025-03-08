@@ -147,7 +147,6 @@ const Card = ({ name, icon, experience }) =>
     className="flex flex-row items-center 
     w-fit
     h-fit
-    shadow
     p-2
     flex-nowrap
     secondary_bg
@@ -155,7 +154,7 @@ const Card = ({ name, icon, experience }) =>
     "
     >
       <label
-        className=" rounded-full shadow-md w-14 h-14 p-2 bg-app_lc_primary dark:bg-app_ld_primary "
+        className=" rounded-full shadow_app  w-14 h-14 p-2 bg-app_lc_primary dark:bg-app_ld_primary "
         >
         {icon}
         </label>
