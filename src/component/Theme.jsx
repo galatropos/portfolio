@@ -14,7 +14,7 @@ const Theme = () => {
     }
 
     return (
-    <div className=''>
+    <div className='flex items-center'>
         {theme?<SunOutlined   onClick={onclick} />:<MoonOutlined onClick={onclick} />}
         
     </div>

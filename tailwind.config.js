@@ -38,7 +38,7 @@ export default {
         app_lc_text:color[4],    
        
  
-        app_ld_primary:color[0],      
+        app_ld_primary:color[1],      
         app_ld_secondary:color[7],     
         app_ld_accent:color[2],     
         app_ld_background:color[6],     

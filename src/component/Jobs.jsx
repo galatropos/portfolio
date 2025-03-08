@@ -1,9 +1,8 @@
 import React, { useContext } from "react";
 import contextLanguage from "../context/Language";
 import { dataJobs, dataJobsButton } from "../Data";
-import { PhotoProvider, PhotoView } from 'react-photo-view';
-import 'react-photo-view/dist/react-photo-view.css';
-
+import { PhotoProvider, PhotoView } from "react-photo-view";
+import "react-photo-view/dist/react-photo-view.css";
 
 const Tag = ({ name, icon }) => (
   <span
@@ -28,27 +27,32 @@ const Card = ({ href, image, tag, ...language }) => {
   return (
     <div
       className="w-full
-    flex flex-col items-center  
-        rounded-lg  md:flex-row md:max-w-xl  
+    flex 
+    max-md:flex-col 
+    md:flex-row 
+    md:max-w-xl  
+    
+    items-center  
+        rounded-lg  
         shadow-md
         border-gray-200 
         dark:border-gray-700 
     "
     >
       <div className="flex-col flex flex-wrap items-center w-fit gap-8 ">
-      <PhotoProvider >
-
-<div className='flex flex-wrap flex-row gap-2 justify-evenly ' >
-
-         <PhotoView src={image} >
-            <img src={image} alt="00" key={"00"}  className='pb-7 cursor-pointer'loading="lazy" />
-        </PhotoView>
-    
- </div>
-</PhotoProvider>
-
-
-
+        <PhotoProvider>
+          <div className="flex flex-wrap flex-row gap-2 justify-evenly ">
+            <PhotoView src={image}>
+              <img
+                src={image}
+                alt="00"
+                key={"00"}
+                className="pb-7 cursor-pointer"
+                loading="lazy"
+              />
+            </PhotoView>
+          </div>
+        </PhotoProvider>
 
         <a
           target="_blank"

@@ -150,6 +150,8 @@ const Card = ({ name, icon, experience }) =>
     shadow
     p-2
     flex-nowrap
+    secondary_bg
+    rounded-md
     "
     >
       <label
@@ -157,7 +159,7 @@ const Card = ({ name, icon, experience }) =>
         >
         {icon}
         </label>
-      <div className=" flex flex-col items-center p-4 leading-normal">
+      <div className=" flex flex-col items-center p-4 leading-normal ">
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-app_lc_accent dark:text-app_ld_accent">
           {name}
         </h5>
@@ -171,11 +173,11 @@ const Card = ({ name, icon, experience }) =>
 
 const Experience = () => {
   return (
-    <div className="flex flex-wrap gap-4 w-full justify-evenly">
+    <span className="flex flex-wrap gap-4 w-full justify-evenly h-fit ">
       {Icons.map(e => {
         return <Card {...e} key={e.name} />;
       })}
-    </div>
+    </span>
   );
 };
 

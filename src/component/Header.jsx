@@ -17,16 +17,15 @@ const Header = () => {
 
    }
   return (
-    <>
-    
-          <a className='shadow w-[50%] p-2 text-center' aria-label="Chat on WhatsApp" target='_blank' 
+    <div className='flex flex-col'>
+          <a className=' border border-x-0 border-t-0 p-2 text-center w-full' aria-label="Chat on WhatsApp" target='_blank' 
           href={`https://wa.me/5219191281521?text=¡Hola! Estoy en búsqueda de nuevas oportunidades. Si crees que encajo en tu equipo, hablemos.`}
           >
           {dataHeader[getLanguage][0]} <WhatsAppOutlined />
           </a >
 
-        <div onClick={onDownload} className='shadow w-[50%] p-2 text-center'>{dataHeader[getLanguage][1]} <CloudDownloadOutlined /></div>
-    </>
+        <div onClick={onDownload} className='border border-x-0 border-t-0 w-full p-2 text-center'>{dataHeader[getLanguage][1]} <CloudDownloadOutlined /></div>
+  </div>
   )
 }
 

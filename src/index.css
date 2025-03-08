@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .primary_bg {@apply bg-app_lc_primary dark:bg-app_ld_primary;}
+    .secondary_bg {@apply bg-app_lc_secondary dark:bg-app_ld_secondary;}
+    .accent_bg {@apply bg-app_lc_accent dark:bg-app_ld_accent;}
+    .background_bg {@apply bg-app_lc_background dark:bg-app_ld_background;}
+    .text_bg {@apply bg-app_lc_text dark:bg-app_ld_text;}
+    .text_text {@apply text-app_lc_text dark:text-app_ld_text;}
+    .text_text2 {@apply text-app_ld_text dark:text-app_lc_text;}
+  }
