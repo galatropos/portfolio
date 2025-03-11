@@ -3,6 +3,7 @@ import contextLanguage from "../context/Language";
 import { dataContact, dataJobs, dataJobsButton, dataMyContact } from "../Data";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
+import CustomCard from "./CustomCard";
 
 const Tag = ({ name, icon }) => (
   <span
@@ -27,22 +28,19 @@ const Card = ({ href, image, tag, ...language }) => {
   return (
     
     <div
-      className="w-full
+      className="
+    "
+    >
+  <div
+  className='w-full
     flex 
     max-md:flex-col 
     md:flex-row 
     md:max-w-xl  
     items-center  
-        rounded-lg  
-        shadow_app
-        
-        border-gray-200 
-        dark:border-gray-700 
-        secondary_bg
-        p-4
-    "
-    >
-  
+        '
+  >
+
       <div className="flex-col flex flex-wrap items-center w-fit gap-2 ">
         <PhotoProvider>
           <div className="flex flex-wrap flex-row gap-2 justify-evenly ">
@@ -77,19 +75,21 @@ const Card = ({ href, image, tag, ...language }) => {
           {dataJobsButton[getLanguage]}
         </a>
       </div>
-      <div className="flex flex-col items-center p-4 leading-normal gap-2">
+      <div className="flex flex-col items-center justify-center  p-4 leading-normal gap-2   ">
         <h5 className="mb-2 text-2xl font-bold tracking-tight accent_text">
           {name}
         </h5>
-        <p className="mb-3 font-normal text_text overflow-auto h-56">
+        <p className="mb-3 font-normal text_text overflow-auto ">
           {description}
         </p>
-        <div className="flex gap-2 flex-row flex-wrap  justify-evenly w-fit">
+        <CustomCard className="flex gap-2 flex-row flex-wrap  justify-evenly w-fit">
           {tag.map((e, i) => (
             <Tag {...e} key={i} />
           ))}
-        </div>
+        </CustomCard>
       </div>
+      </div>
+
     </div>
   );
 };

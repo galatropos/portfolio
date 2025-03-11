@@ -17,7 +17,7 @@ return(
 
   <>
         <section id={id} className="pt-32">        
-          <h2 className="text-app_lc_accent text-center dark:text-app_ld_accent text-2xl pb-4">
+          <h2 className="text-app_lc_accent font-bold text-center dark:text-app_ld_accent text-2xl pb-4 first-letter:uppercase ">
           {language[getLanguage]}
         </h2>
           {element}

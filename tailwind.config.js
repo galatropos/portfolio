@@ -12,7 +12,7 @@ d5b09c  coffe
 const color=[
   "#596680",//  0-Esmeralda
   "#F0F8FE",//  1-light suave
-  "#FFFFFF",//  2-light hard
+  "#ebefea",//  2-light hard
   "#282828",//  3-dark hard
   "#394457",//  4-dark1 suave
   

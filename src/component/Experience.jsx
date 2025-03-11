@@ -23,8 +23,8 @@ import {
   TailwindCSS,
   MaterialUI,
 } from "./Icons";
-import { dataExperience } from "../Data";
 import contextLanguage from "../context/Language";
+import CustomCard from "./CustomCard";
 
 const Icons = [
   {
@@ -143,34 +143,29 @@ const Card = ({ name, icon, experience }) =>
   const {getLanguage}= useContext(contextLanguage)
 
   return(
-    <div
-    className="flex flex-row items-center 
-    shadow_app
+    <div className="flex flex-row items-center 
     w-fit
     h-fit
-    p-2
     flex-nowrap
-    secondary_bg
-    rounded-md
-    "
-    >
+    ">
       <label
-        className=" rounded-full shadow_app  w-14 h-14 p-2 bg-app_lc_primary dark:bg-app_ld_primary "
+        className=" rounded-full shadow_app  w-14 h-14 p-2 background_bg"
         >
         {icon}
         </label>
       <div className=" flex flex-col items-center p-4 leading-normal ">
-        <h5 className="mb-2 text-2xl font-bold tracking-tight text-app_lc_accent dark:text-app_ld_accent">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight ">
           {name}
         </h5>
-   
       </div>
     </div>
+
 );
 }
 
 const Experience = () => {
   return (
+    
     <span className="flex flex-wrap gap-4 w-full justify-evenly h-fit ">
       {Icons.map(e => {
         return <Card {...e} key={e.name} />;
