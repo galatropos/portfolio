@@ -11,7 +11,7 @@ const MenuMd = () => {
 
   return (
     <>
-      <div className=" md:hidden flex px-2 justify-around items-center h-full w-full text-app_lc_text  ">
+      <div className=" md:hidden flex px-2 justify-around items-center h-full w-full text_text  secondary_bg ">
         <span className="flex flex-nowrap">
           <Logotipo />
         </span>

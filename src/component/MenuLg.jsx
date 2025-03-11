@@ -7,7 +7,7 @@ import ToggleLanguage from "./ToggleLanguage";
 const MenuLg = () => {
 
   return (
-    <div className="flex flex-row px-10 items-center  justify-between h-full gap-4  max-md:hidden text-app_lc_text">
+    <div className="flex flex-row px-10 items-center  justify-between h-full gap-4  max-md:hidden text_text secondary_bg">
       <label className="w-fit  flex  items-center">
         <Logotipo /> Giovany Alejandro Alfaro López
       </label>

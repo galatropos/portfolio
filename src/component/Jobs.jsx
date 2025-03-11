@@ -9,8 +9,7 @@ const Tag = ({ name, icon }) => (
     className="flex flex-row flex-nowrap w-fit
    bg-app_lc_background 
    dark:bg-app_ld_accent 
-    text-app_lc_text
-    dark:text-app_ld_secondary
+   text_text
    border-app_lc_accent
    dark:border-app_ld_accent
    select-none

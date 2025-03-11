@@ -8,6 +8,7 @@ import Contact from "./component/Contact";
 import Footer from "./component/Footer";
 import contextLanguage from "./context/Language";
 import { dataTitle } from "./Data";
+import ArrowUp from "./component/ArrowUp";
 
 const Title=({id,element,...language})=>
 {
@@ -37,7 +38,10 @@ const App = () => {
     min-h-screen
       bg-app_lc_background
       dark:bg-app_ld_background
-     text_text "
+     text_text 
+     -z-50
+     "
+    
      >
       <div  className="overflow-auto z-20 min-h-20 h-20  w-full fixed top-0  bg-app_lc_primary/90 dark:bg-app_ld_primary/90 shadow_app ">
           <div className="  h-full  w-full  ">
@@ -45,9 +49,19 @@ const App = () => {
             <MenuLg />
           </div>
       </div>
-      <div className=" w-full flex  justify-center background_bg  ">
-        <span className="w-[70%]   flex flex-col items-center justify-center">
-          {dataTitle.map(e=><Title {...e} key={e.id} />)}
+      <div className=" w-full flex  justify-center background_bg    ">
+        <span key={"gd"} className="w-[60%]   flex flex-col items-center justify-center">
+          
+          {dataTitle.map((e,i)=>
+          {
+            
+            return(<React.Fragment key={e.id}>
+
+                {i==1&& <ArrowUp key={"arrow"}/>} 
+              <Title {...e} key={e.id} />
+              </React.Fragment>)
+          }
+          )}
         </span>
 
       </div>

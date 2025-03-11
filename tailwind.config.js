@@ -10,11 +10,11 @@ d5b09c  coffe
 204045  forest
 */
 const color=[
-  "#2ECC71",//  0-Esmeralda
-  "#cad8de",//  1-light suave
-  "#ccded5",//  2-light hard
-  "#121212",//  3-dark hard
-  "#2a523b",//  4-dark1 suave
+  "#596680",//  0-Esmeralda
+  "#F0F8FE",//  1-light suave
+  "#FFFFFF",//  2-light hard
+  "#282828",//  3-dark hard
+  "#394457",//  4-dark1 suave
   
 ]
 

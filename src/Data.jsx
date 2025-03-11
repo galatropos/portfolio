@@ -20,6 +20,7 @@ import {
   LinkedIn,
   WhatsApp,
   Gmail,
+  Github,
 } from "./component/Icons";
 import mercadoexpres from "./assets/mercadoexpres.webp";
 import rosasEternasBecky from "./assets/rosasEternasBecky.webp";
@@ -42,7 +43,7 @@ export const dataNavigation = {
       to: "experience",
     },
     {
-      title: "Projectos",
+      title: "Proyectos",
       icon: <AuditOutlined />,
       to: "jobs",
     },
@@ -54,7 +55,7 @@ export const dataNavigation = {
   ],
   en: [
     {
-      title: "about me",
+      title: "About me",
       icon: <UserOutlined />,
       to: "about",
     },
@@ -146,8 +147,8 @@ export const dataContact = {
 };
 
 export const dataJobsButton = {
-  es: "despejar",
-  en: "deploy",
+  es: "Produción",
+  en: "Deploy",
 };
 
 export const dataJobs = [
@@ -311,11 +312,7 @@ export const dataTitle =
 
 
 export const dataSocial = [
-  {
-    text: "/gaal.el",
-    href: "https://www.facebook.com/gaal.el",
-    icon: <Facebook />,
-  },
+
 
   {
     text: "/gaal",
@@ -329,10 +326,28 @@ export const dataMyContact = [
     href: "https://wa.me/5219191281521?text=¡Hola! Estoy en búsqueda de nuevas oportunidades. Si crees que encajo en tu equipo, hablemos.",
     icon: <WhatsApp />,
   },
-
   {
     text: "giovany.alejandro80@gmail.com",
     href: "https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=giovany.alejandro80@gmail.com",
     icon: <Gmail />,
+  },
+  {
+    text: "/galatropos",
+    href: "https://github.com/galatropos/",
+    icon: <Github />,
+  },
+];
+
+export const dataFooter= [
+
+  {
+    text: "/gaal",
+    href: "https://www.linkedin.com/in/gaal/",
+    icon: <LinkedIn />,
+  },
+  {
+    text: "/galatropos",
+    href: "https://github.com/galatropos/",
+    icon: <Github />,
   },
 ];

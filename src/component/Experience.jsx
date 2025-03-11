@@ -163,9 +163,7 @@ const Card = ({ name, icon, experience }) =>
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-app_lc_accent dark:text-app_ld_accent">
           {name}
         </h5>
-        <p className="mb-3 font-normal ">
-          { dataExperience[getLanguage][experience]}
-        </p>
+   
       </div>
     </div>
 );
