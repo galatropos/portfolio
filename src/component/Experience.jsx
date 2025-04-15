@@ -22,9 +22,9 @@ import {
   Bootstrap,
   TailwindCSS,
   MaterialUI,
+  Nextjs,
 } from "./Icons";
 import contextLanguage from "../context/Language";
-import CustomCard from "./CustomCard";
 
 const Icons = [
   {
@@ -130,6 +130,11 @@ const Icons = [
   {
     name: "MaterialUI",
     icon: <MaterialUI  />,
+    experience: 2,
+  },
+  {
+    name: "Next.Js",
+    icon: <Nextjs  />,
     experience: 2,
   }
 ];

@@ -21,9 +21,12 @@ import {
   WhatsApp,
   Gmail,
   Github,
+  Nextjs,
+  MaterialUI,
 } from "./component/Icons";
 import mercadoexpres from "./assets/mercadoexpres.webp";
 import rosasEternasBecky from "./assets/rosasEternasBecky.webp";
+import bloquera from "./assets/bloquera.webp";
 import tcgp from "./assets/tcgp.webp";
 import Experience from "./component/Experience";
 import About from "./component/About";
@@ -273,6 +276,92 @@ export const dataJobs = [
       {
         name: "JavaScript",
         icon: <JavaScript />,
+      },
+    ],
+  },
+  {
+    es: {
+      name: "FortiBlock",
+      description:
+        `FortiBlock es una página web que desarrollé como parte de mi portafolio profesional, enfocada en presentar una empresa ficticia del sector de la construcción especializada en la fabricación y comercialización de bloques de concreto de alta calidad. Este proyecto refleja mis habilidades tanto en diseño como en desarrollo web moderno.
+
+El sitio fue construido con tecnologías como Next.js, Tailwind CSS y TypeScript, y está enfocado en ofrecer una experiencia de usuario intuitiva, rápida y visualmente atractiva. Integra secciones clave como:
+
+“Cómo funciona”, para explicar el proceso de fabricación y atención al cliente.
+
+“Nuestros productos”, donde se detallan los bloques y servicios ofrecidos.
+
+“Preguntas frecuentes”, para resolver dudas comunes de los visitantes.
+
+“Términos y condiciones”, asegurando claridad legal y transparencia.
+
+“Reseñas de clientes”, donde los usuarios pueden dejar valoraciones, incluyendo imágenes, puntuaciones y comentarios detallados.
+
+Además, la web cuenta con efectos visuales como fondos con desenfoque (blur), imágenes dinámicas y una estructura completamente responsive para adaptarse a todos los dispositivos.
+
+Este proyecto no solo demuestra mis conocimientos técnicos, sino también mi enfoque en la experiencia del usuario, la organización del contenido y el diseño moderno orientado a marcas sólidas y confiables.`,
+    },
+    en: {
+      name: "FortiBlock",
+      description:
+        `FortiBlock is a website I developed as part of my professional portfolio, created to showcase a fictional company in the construction industry that specializes in the manufacturing and distribution of high-quality concrete blocks. This project highlights my skills in both modern web design and development.
+
+The site was built using Next.js, Tailwind CSS, and TypeScript, and focuses on delivering a fast, intuitive, and visually appealing user experience. It includes key sections such as:
+
+"How it Works" – explaining the production process and customer service.
+
+"Our Products" – showcasing the concrete blocks and related services.
+
+"Frequently Asked Questions" – addressing common user concerns.
+
+"Terms and Conditions" – ensuring legal clarity and transparency.
+
+"Customer Reviews" – allowing users to leave detailed feedback with ratings, descriptions, and up to four images.
+
+The website also features modern UI effects such as blurred backgrounds, dynamic imagery, and a fully responsive layout that works seamlessly across devices.
+
+This project not only demonstrates my technical capabilities but also my focus on user experience, content structure, and brand-driven design.
+
+`,
+    },
+    image: bloquera,
+    href: "https://bloquera.vercel.app/",
+    tag: [
+      {
+        name: "MongoDB",
+        icon: <MongoDB />,
+      },
+      {
+        name: "next.js",
+        icon: <Nextjs />,
+      },
+      {
+        name: "React",
+        icon: <ReactIcon />,
+      },
+      {
+        name: "Amazon web service",
+        icon: <AmazonWebServices />,
+      },
+      {
+        name: "Node Js",
+        icon: <Nodejs />,
+      },
+      {
+        name: "Material UI",
+        icon: <MaterialUI/>,
+      },
+      {
+        name: "TailwindCSS",
+        icon: <TailwindCSS />,
+      },
+      {
+        name: "JavaScript",
+        icon: <JavaScript />,
+      },
+      {
+        name: "HTLM5",
+        icon: <HTML5 />,
       },
     ],
   },
