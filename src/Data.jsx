@@ -101,10 +101,11 @@ export const dataAbout = {
       </p>
 
       <p>
-        Actualmente, soy docente en el Telebachillerato Comunitario, impartiendo clases
-        en la área Ciencias Experimentales, Lógica y Tecnologías. Tengo experiencia en
-        administración de redes, seguridad informática, virtualización, cloud
-        computing, automatización y desarrollo backend/frontend.
+        Actualmente, soy docente en el Telebachillerato Comunitario, impartiendo
+        clases en la área Ciencias Experimentales, Lógica y Tecnologías. Tengo
+        experiencia en administración de redes, seguridad informática,
+        virtualización, cloud computing, automatización y desarrollo
+        backend/frontend.
       </p>
 
       <p>
@@ -255,12 +256,12 @@ export const dataJobs = [
     es: {
       name: "TCG Pokemón",
       description:
-      "Desarrollé una aplicación web diseñada para ayudar a los coleccionistas del juego de cartas Pokémon TCG a gestionar sus colecciones. La app permite a los usuarios registrar las cartas que les faltan, facilitando el seguimiento de su progreso"
+        "Desarrollé una aplicación web diseñada para ayudar a los coleccionistas del juego de cartas Pokémon TCG a gestionar sus colecciones. La app permite a los usuarios registrar las cartas que les faltan, facilitando el seguimiento de su progreso",
     },
     en: {
       name: "TCG Pokemon",
       description:
-      "I developed a web application designed to help collectors of the Pokémon TCG card game manage their collections. The app allows users to register the cards they are missing, making it easier to track their progress."
+        "I developed a web application designed to help collectors of the Pokémon TCG card game manage their collections. The app allows users to register the cards they are missing, making it easier to track their progress.",
     },
     image: tcgp,
     href: "https://tcgpokemon.netlify.app/",
@@ -282,45 +283,11 @@ export const dataJobs = [
   {
     es: {
       name: "FortiBlock",
-      description:
-        `FortiBlock es una página web que desarrollé como parte de mi portafolio profesional, enfocada en presentar una empresa ficticia del sector de la construcción especializada en la fabricación y comercialización de bloques de concreto de alta calidad. Este proyecto refleja mis habilidades tanto en diseño como en desarrollo web moderno.
-
-El sitio fue construido con tecnologías como Next.js, Tailwind CSS y TypeScript, y está enfocado en ofrecer una experiencia de usuario intuitiva, rápida y visualmente atractiva. Integra secciones clave como:
-
-“Cómo funciona”, para explicar el proceso de fabricación y atención al cliente.
-
-“Nuestros productos”, donde se detallan los bloques y servicios ofrecidos.
-
-“Preguntas frecuentes”, para resolver dudas comunes de los visitantes.
-
-“Términos y condiciones”, asegurando claridad legal y transparencia.
-
-“Reseñas de clientes”, donde los usuarios pueden dejar valoraciones, incluyendo imágenes, puntuaciones y comentarios detallados.
-
-Además, la web cuenta con efectos visuales como fondos con desenfoque (blur), imágenes dinámicas y una estructura completamente responsive para adaptarse a todos los dispositivos.
-
-Este proyecto no solo demuestra mis conocimientos técnicos, sino también mi enfoque en la experiencia del usuario, la organización del contenido y el diseño moderno orientado a marcas sólidas y confiables.`,
+      description: `FortiBlock es una web ficticia desarrollada como parte de mi portafolio profesional, enfocada en una empresa de construcción especializada en bloques de concreto. Fue creada con Next.js, Tailwind CSS y TypeScript, destacando por su diseño moderno, velocidad y experiencia de usuario responsive. Incluye secciones como: “Cómo funciona”, “Nuestros productos”, “Preguntas frecuentes”, “Términos y condiciones” y “Reseñas de clientes” con imágenes y comentarios. El sitio incorpora efectos visuales y una estructura clara que refleja mis habilidades en desarrollo web, diseño UI/UX y organización de contenido.`,
     },
     en: {
       name: "FortiBlock",
-      description:
-        `FortiBlock is a website I developed as part of my professional portfolio, created to showcase a fictional company in the construction industry that specializes in the manufacturing and distribution of high-quality concrete blocks. This project highlights my skills in both modern web design and development.
-
-The site was built using Next.js, Tailwind CSS, and TypeScript, and focuses on delivering a fast, intuitive, and visually appealing user experience. It includes key sections such as:
-
-"How it Works" – explaining the production process and customer service.
-
-"Our Products" – showcasing the concrete blocks and related services.
-
-"Frequently Asked Questions" – addressing common user concerns.
-
-"Terms and Conditions" – ensuring legal clarity and transparency.
-
-"Customer Reviews" – allowing users to leave detailed feedback with ratings, descriptions, and up to four images.
-
-The website also features modern UI effects such as blurred backgrounds, dynamic imagery, and a fully responsive layout that works seamlessly across devices.
-
-This project not only demonstrates my technical capabilities but also my focus on user experience, content structure, and brand-driven design.
+      description: `FortiBlock is a fictional website I developed as part of my professional portfolio, focused on a construction company specializing in high-quality concrete blocks. Built with Next.js, Tailwind CSS, and TypeScript, it features a modern design, fast performance, and a fully responsive user experience. Key sections include: “How it works,” “Our Products,” “FAQ,” “Terms and Conditions,” and “Customer Reviews” with images and detailed feedback. The site also integrates visual effects and a clean structure, showcasing my skills in web development, UI/UX design, and content organization.
 
 `,
     },
@@ -349,7 +316,7 @@ This project not only demonstrates my technical capabilities but also my focus o
       },
       {
         name: "Material UI",
-        icon: <MaterialUI/>,
+        icon: <MaterialUI />,
       },
       {
         name: "TailwindCSS",
@@ -367,46 +334,39 @@ This project not only demonstrates my technical capabilities but also my focus o
   },
 ];
 
-
-
-
-
-export const dataTitle =
-[
+export const dataTitle = [
   {
-    id:"about",
-    element:<About/>,
-    es:"Acerca de mi",
-    en:"about me",
+    id: "about",
+    element: <About />,
+    es: "Acerca de mi",
+    en: "about me",
   },
   {
-    id:"experience",
-    element:<Experience/>,
-    es:"Mis habilidades como desarrollador",
-    en:"My skills as a developer",
+    id: "experience",
+    element: <Experience />,
+    es: "Mis habilidades como desarrollador",
+    en: "My skills as a developer",
   },
   {
-    id:"jobs",
-    element:<Jobs/>,
-    es:"proyectos realizados",
-    en:"projects carried out",
+    id: "jobs",
+    element: <Jobs />,
+    es: "proyectos realizados",
+    en: "projects carried out",
   },
   {
-    id:"contact",
-    element:<Contact/>,
-    es:"¿como puedes contactarme?",
-    en:"How can you contact me?",
+    id: "contact",
+    element: <Contact />,
+    es: "¿como puedes contactarme?",
+    en: "How can you contact me?",
   },
 ];
 
-
 export const dataSocial = [
-
-
   {
     text: "/gaal",
     href: "https://www.linkedin.com/in/gaal/",
     icon: <LinkedIn />,
+    copy: "linkedin.com/in/gaal/",
   },
 ];
 export const dataMyContact = [
@@ -414,21 +374,23 @@ export const dataMyContact = [
     text: "+521 919 128 1521",
     href: "https://wa.me/5219191281521?text=¡Hola! Estoy en búsqueda de nuevas oportunidades. Si crees que encajo en tu equipo, hablemos.",
     icon: <WhatsApp />,
+    copy: "+521 919 128 1521"
   },
   {
     text: "giovany.alejandro80@gmail.com",
     href: "https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=giovany.alejandro80@gmail.com",
     icon: <Gmail />,
+    copy: "giovany.alejandro80@gmail.com"
   },
   {
     text: "/galatropos",
     href: "https://github.com/galatropos/",
     icon: <Github />,
+    copy: "github.com/galatropos/"
   },
 ];
 
-export const dataFooter= [
-
+export const dataFooter = [
   {
     text: "/gaal",
     href: "https://www.linkedin.com/in/gaal/",

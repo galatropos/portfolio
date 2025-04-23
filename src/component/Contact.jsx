@@ -2,10 +2,8 @@ import React, { useContext } from "react";
 import contextLanguage from "../context/Language";
 import { dataContact, dataMyContact, dataSocial } from "../Data";
 import Copy from "./Copy";
-import ArrowUp from "./ArrowUp";
-import CustomCard from "./CustomCard";
 
-const Card = ({ text, href, icon }) => (
+const Card = ({ text, href, icon,copy }) => (
   <div className="  flex flex-col  gap-2 items-center w-fit ">
     <a
       className=" overflow-auto rounded-full  shadow_app flex w-16 h-16 p-3 text-center  
@@ -16,7 +14,7 @@ const Card = ({ text, href, icon }) => (
       {icon}
     </a>
     <div className="flex-row w-max flex-nowrap  justify-between">
-      {text} <Copy text={text} />
+      {text} <Copy text={copy} />
     </div>
   </div>
 );

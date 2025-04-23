@@ -2,15 +2,15 @@ import { CloudDownloadOutlined, WhatsAppOutlined } from "@ant-design/icons";
 import React, { useContext } from "react";
 import { dataHeader } from "../Data";
 import contextLanguage from "../context/Language";
-import cv from "../assets/cv.pdf";
+import cvGiovanyAlejandroAlfaroLopez from "../assets/cv.pdf";
 
 const Header = () => {
   const { getLanguage } = useContext(contextLanguage);
 
   const onDownload = () => {
     const link = document.createElement("a");
-    link.href = cv;
-    link.download = "cv.pdf"; // specify the filename
+    link.href =cvGiovanyAlejandroAlfaroLopez;
+    link.download = "cv-GiovanyAlejandroAlfaroLopez.pdf"; // specify the filename
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
